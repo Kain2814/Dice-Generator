@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>🎲 Dice Roller</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+   <h1>Dice Roller</h1>
+  <div class="roller">
+    <label for="dice">Which Dice will you roll?:</label>
+    <select id="dice">
+      <option value="4">d4</option>
+      <option value="6">d6</option>
+      <option value="8">d8</option>
+      <option value="10">d10</option>
+      <option value="12">d12</option>
+      <option value="20">d20</option>
+      <option value="100">d100</option>
+    </select>
+    <button id="rollButton">Roll Dice!</button>
+    <div id="result" class="result">-- Roll to see result--</div>
+  </div>
+
+  <h2 class="subtitle">Roll your Dice to begin!</h2>
+
+  <!-- This is pulling the dice function js into the html files (aka the webpage) -->
+  <script type="module" src="./rollDice.js"> </script>
+  </body>
+</html>
